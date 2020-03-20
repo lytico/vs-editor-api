@@ -8,12 +8,13 @@
     <TargetFramework>$(TargetFramework)</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TextData\TextData.csproj" />
+    <ProjectReference Include="..\TextUI\TextUI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup Condition="$(UsePlatformEditorBinaries) != 'true'">
     <ProjectReference Include="..\..\Def\TextUI\TextUI.csproj" />
-  </ItemGroup>
-  <ItemGroup Condition="$(UsePlatformEditorBinaries) == 'true'">
-    <PackageReference Include="Microsoft.VisualStudio.Text.UI" Version="$(NuGetVersionVSEditor)" PrivateAssets="all" ExcludeAssets="runtime" />
   </ItemGroup>
 </Project>

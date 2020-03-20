@@ -30,7 +30,6 @@
     <EmbeddedResource Update="ContentType\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ContentType\Strings.Designer.cs</LastGenOutput>
-      <LogicalName>Microsoft.VisualStudio.CoreUtilityImplementation.ContentType.Strings.resources</LogicalName>
       <ManifestResourceName>Microsoft.VisualStudio.CoreUtilityImplementation.ContentType.Strings.resources</ManifestResourceName>
     </EmbeddedResource>
   </ItemGroup>

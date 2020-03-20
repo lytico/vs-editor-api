@@ -1,4 +1,4 @@
-<Project>
+<Project ToolsVersion="15.0">
   <PropertyGroup>
     <!-- workaround for https://github.com/NuGet/Home/issues/5894 -->
     <OriginalProjectName>TextUIWpf</OriginalProjectName>
