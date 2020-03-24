@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0">
 
-  <Import Condition="$(OS) == 'Windows_NT'" Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
-  <Import Condition="$(OS) == 'UNIX'" Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <Import Condition="$(OS) == 'OSX'" Project="Sdk.props" Sdk="Xamarin.Mac.Sdk" />
+  <Import Condition="$(OS) != 'OSX'" Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 
   <PropertyGroup>
     <AssemblyName>Microsoft.VisualStudio.Text.BraceCompletion.Implementation</AssemblyName>
@@ -14,8 +13,12 @@
     <TargetFramework>$(TargetFramework)</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationFramework" />
-    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>$(WpfRefAssemblyPath)PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>$(WpfRefAssemblyPath)PresentationFramework.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="System.Xaml" />
     <Reference Include="System" />
@@ -47,8 +50,7 @@
     </Compile>
   </ItemGroup>
 
-  <Import Condition="$(OS) == 'Windows_NT'" Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
-  <Import Condition="$(OS) == 'UNIX'" Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <Import Condition="$(OS) != 'OSX'" Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <Import Condition="$(OS) == 'OSX'" Project="Sdk.targets" Sdk="Xamarin.Mac.Sdk" />
 
 </Project>

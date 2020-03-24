@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\net-framework-48-ref-assemblies\0.0.0.1\PresentationCore.dll</HintPath>
+      <HintPath>$(WpfRefAssemblyPath)PresentationCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="WindowsBase" />

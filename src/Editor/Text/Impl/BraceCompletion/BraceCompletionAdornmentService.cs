@@ -132,7 +132,7 @@ namespace Microsoft.VisualStudio.Text.BraceCompletion.Implementation
                 // check that the span is visible
                 if (span.HasValue && _textView.TextViewLines.FormattedSpan.Contains(span.Value.Start))
                 {
-#if !WINDOWS
+#if MAC
                     TextBounds textBounds = _textView.TextViewLines.GetCharacterBounds(span.Value.Start);
                     var nsview = new AppKit.NSView();
                     nsview.WantsLayer = true;

@@ -9,8 +9,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>$(WpfRefAssemblyPath)PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>$(WpfRefAssemblyPath)PresentationFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

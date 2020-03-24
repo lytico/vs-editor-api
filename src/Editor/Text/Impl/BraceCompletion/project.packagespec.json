@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/data/Work/Programming/[try-out]/monodevelop/monodevelop/main/external/vs-editor-api/src/Editor/Text/Impl/BraceCompletion/BraceCompletionImpl.csproj",
+    "projectName": "BraceCompletionImpl",
+    "projectPath": "/home/data/Work/Programming/[try-out]/monodevelop/monodevelop/main/external/vs-editor-api/src/Editor/Text/Impl/BraceCompletion/BraceCompletionImpl.csproj",
+    "outputPath": "/home/data/Work/Programming/[try-out]/monodevelop/monodevelop/main/external/vs-editor-api/src/Editor/Text/Impl/BraceCompletion/",
+    "projectStyle": "PackageReference",
+    "sources": {
+      "/home/data/Work/Programming/[try-out]/monodevelop/monodevelop/main/external/vs-editor-api/build/nuget-feed": {},
+      "https://api.nuget.org/v3/index.json": {},
+      "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+      "https://www.myget.org/F/mirepoix/api/v3/index.json": {}
+    }
+  }
+}
