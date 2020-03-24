@@ -18,8 +18,12 @@
 
     <HaveXamarinMac Condition="'$(HaveXamarinMac)' == '' And $(IsMac) And Exists('$(XamarinMacCommonProps)') And Exists('$(XamarinMacCommonTargets)')">true</HaveXamarinMac>
     <HaveXamarinMac Condition="'$(HaveXamarinMac)' == ''">false</HaveXamarinMac>
-  </PropertyGroup>
 
+    <WpfRefAssemblyPath  Condition="'$(WpfRefAssemblyPath)' == ''">$([MSBuild]::NormalizePath($(MSBuildThisFileDirectory)))../../../../../../net-framework-48-ref-assemblies/0.0.0.1/</WpfRefAssemblyPath>
+  </PropertyGroup>
+	<PropertyGroup Condition="$(Configuration.Contains('Mac'))">
+		<DefineConstants>$(DefineConstants);MAC</DefineConstants>
+	</PropertyGroup>
   <PropertyGroup>
     <NuGet Condition="'$(NuGet)' == ''">$([MSBuild]::NormalizePath($(MSBuildThisFileDirectory)))..\tools\_artifacts\nuget.exe</NuGet>
     <NuGet Condition="!Exists('$(NuGet)')">nuget</NuGet>

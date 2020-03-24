@@ -14,6 +14,11 @@
       <IsWindows>true</IsWindows>
       <HaveXamarinMac>false</HaveXamarinMac>
     </SolutionConfiguration>
+    <SolutionConfiguration Include="Gnome">
+      <Configuration>Debug</Configuration>
+      <IsWindows>false</IsWindows>
+      <HaveXamarinMac>false</HaveXamarinMac>
+    </SolutionConfiguration>
   </ItemGroup>
 
   <PropertyGroup>

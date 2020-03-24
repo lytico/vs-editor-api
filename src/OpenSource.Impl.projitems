@@ -27,6 +27,33 @@
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
   </ItemGroup>
+  <!-- Fake Presentation Foundation for Linux -->
+  <ItemGroup Condition="$(IsLinux)">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)FPF\WindowsBase\WindowsBaseLinux.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)FPF\PresentationCore\PresentationCoreLinux.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)FPF\PresentationFramework\PresentationFrameworkLinux.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)FPF\UIAutomationTypes\UIAutomationTypes.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)FPF\UIAutomationProvider\UIAutomationProvider.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)FPF\UIAutomationClient\UIAutomationClient.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Util\TextDataUtil\TextDataUtil.csproj">
