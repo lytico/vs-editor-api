@@ -18,6 +18,10 @@
 
     <HaveXamarinMac Condition="'$(HaveXamarinMac)' == '' And $(IsMac) And Exists('$(XamarinMacCommonProps)') And Exists('$(XamarinMacCommonTargets)')">true</HaveXamarinMac>
     <HaveXamarinMac Condition="'$(HaveXamarinMac)' == ''">false</HaveXamarinMac>
+
+    <HaveGtk Condition="'$(HaveGtk)' == '' And $(IsLinux)" >true</HaveGtk>
+    <HaveGtk Condition="'$(HaveGtk)' == ''">false</HaveGtk>
+
   </PropertyGroup>
 
   <PropertyGroup>
