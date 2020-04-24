@@ -37,4 +37,10 @@
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
   </ItemGroup>
+  <!-- Gtk Projects -->
+  <ItemGroup Condition="$(HaveGtk)">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Def\TextUIGtk\TextUIGtk.csproj">
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

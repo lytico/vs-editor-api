@@ -81,6 +81,46 @@
     </ItemGroup>
   </Target>
 
+  <PropertyGroup Condition="$(HasGtk) == 'true'">
+    <AssemblySearchPaths>
+      $(FPFOutputPath);
+      $(AssemblySearchPaths);
+    </AssemblySearchPaths>
+  </PropertyGroup>
+
+  <Target
+    Name="PrepareFPFProjectReferences"
+    BeforeTargets="AssignProjectConfiguration"
+    Condition="$(HasGtk) == 'true'">
+    <ItemGroup>
+      <ProjectReference
+        Condition="'%(Reference.Identity)' == 'WindowsBase'"
+        Include="$(FPFRootPath)WindowsBase\WindowsBaseGtk.csproj"/>
+      <ProjectReference
+        Condition="'%(Reference.Identity)' == 'PresentationCore'"
+        Include="$(FPFRootPath)PresentationCore\PresentationCoreGtk.csproj"/>
+      <ProjectReference
+        Condition="'%(Reference.Identity)' == 'PresentationFramework'"
+        Include="$(FPFRootPath)PresentationFramework\PresentationFrameworkGtk.csproj"/>
+      <ProjectReference
+        Condition="'%(Reference.Identity)' == 'UIAutomationClient'"
+        Include="$(FPFRootPath)UIAutomationClient\UIAutomationClient.csproj"/>
+      <ProjectReference
+        Condition="'%(Reference.Identity)' == 'UIAutomationProvider'"
+        Include="$(FPFRootPath)UIAutomationProvider\UIAutomationProvider.csproj"/>
+      <ProjectReference
+        Condition="'%(Reference.Identity)' == 'UIAutomationTypes'"
+        Include="$(FPFRootPath)UIAutomationTypes\UIAutomationTypes.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Remove="WindowsBase"/>
+      <Reference Remove="PresentationCore"/>
+      <Reference Remove="PresentationFramework"/>
+      <Reference Remove="UIAutomationClient"/>
+      <Reference Remove="UIAutomationProvider"/>
+      <Reference Remove="UIAutomationTypes"/>
+    </ItemGroup>
+  </Target>
   <Target Name="Test" Condition="$(HasEditorUnitTests)">
     <PropertyGroup>
       <StandaloneMacEditor>$(RepoBinPath)Editor\Text\Test\Util\StandaloneMacEditor\$(Configuration)\$(TargetFramework)\MonoDevelop.Ide.app\Contents\MacOS\MonoDevelop.Ide</StandaloneMacEditor>

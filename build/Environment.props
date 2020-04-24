@@ -16,11 +16,11 @@
     <XamarinMacCommonProps>$(XamarinMacMSBuildExtensionsPath)Xamarin\Mac\Xamarin.Mac.Common.props</XamarinMacCommonProps>
     <XamarinMacCommonTargets>$(XamarinMacMSBuildExtensionsPath)Xamarin\Mac\Xamarin.Mac.Common.targets</XamarinMacCommonTargets>
 
-    <HaveXamarinMac Condition="'$(HaveXamarinMac)' == '' And $(IsMac) And Exists('$(XamarinMacCommonProps)') And Exists('$(XamarinMacCommonTargets)')">true</HaveXamarinMac>
+    <HaveXamarinMac Condition="'$(HaveXamarinMac)' == '' And $(IsMac) And Exists('$(XamarinMacCommonProps)') And Exists('$(XamarinMacCommonTargets)')">false</HaveXamarinMac>
     <HaveXamarinMac Condition="'$(HaveXamarinMac)' == ''">false</HaveXamarinMac>
 
     <HaveGtk Condition="'$(HaveGtk)' == '' And $(IsLinux)" >true</HaveGtk>
-    <HaveGtk Condition="'$(HaveGtk)' == ''">false</HaveGtk>
+    <HaveGtk Condition="'$(HaveGtk)' == ''">true</HaveGtk>
 
   </PropertyGroup>
 
