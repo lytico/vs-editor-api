@@ -157,4 +157,12 @@
       <Consolidate>true</Consolidate>
     </ProjectReference>
   </ItemGroup>
+
+  <!-- Gtk Projects -->
+  <ItemGroup Condition="$(HaveGtk)">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImplGtk.csproj">
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+      <Consolidate>true</Consolidate>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
