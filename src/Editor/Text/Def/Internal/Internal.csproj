@@ -16,6 +16,9 @@
     <AssemblyAttributeClsCompliant>true</AssemblyAttributeClsCompliant>
     <TargetFramework>$(TargetFramework)</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Page Remove="themes\**" />
   </ItemGroup>

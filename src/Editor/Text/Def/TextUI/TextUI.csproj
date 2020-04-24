@@ -10,11 +10,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
     <Reference Include="System.ComponentModel.Composition" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Def\CoreUtility.csproj" />
+    <ProjectReference Include="..\..\..\FPF\PresentationCore\PresentationCoreGtk.csproj" />
     <ProjectReference Include="..\TextData\TextData.csproj" />
     <ProjectReference Include="..\TextLogic\TextLogic.csproj" />
   </ItemGroup>

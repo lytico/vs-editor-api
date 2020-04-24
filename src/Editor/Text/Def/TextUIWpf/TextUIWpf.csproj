@@ -12,6 +12,9 @@
     <AssemblyAttributeClsCompliant>true</AssemblyAttributeClsCompliant>
     <TargetFramework>$(TargetFramework)</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Page Remove="themes\generic.xaml" />
   </ItemGroup>
@@ -28,6 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Def\CoreUtility.csproj" />
+    <ProjectReference Include="..\..\..\FPF\PresentationFramework\PresentationFramework.csproj" />
     <ProjectReference Include="..\TextData\TextData.csproj" />
     <ProjectReference Include="..\TextLogic\TextLogic.csproj" />
     <ProjectReference Include="..\TextUI\TextUI.csproj" />
