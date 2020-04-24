@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
+<PropertyGroup>
     <TargetFramework>$(TargetFramework)</TargetFramework>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <RootNamespace>PresentationFramework</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\PresentationCore\PresentationCoreGtk.csproj" />
