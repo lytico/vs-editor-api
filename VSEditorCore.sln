@@ -21,19 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internal", "src\Editor\Text
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardClassification", "src\Editor\Language\Def\StandardClassification\StandardClassification.csproj", "{9A603430-A2C1-5599-AECB-1E1A5C229DFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUICocoa", "src\Editor\Text\Def\TextUICocoa\TextUICocoa.csproj", "{E75466D3-CC61-5625-99AC-278C0049BFFD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FPF_Mac", "FPF_Mac", "{01986EB1-3128-5838-B09A-7754A44C22CE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsBase", "src\Editor\FPF\WindowsBase\WindowsBase.csproj", "{522016EE-7098-5C37-844E-297AEDDEE1B4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAutomationProvider", "src\Editor\FPF\UIAutomationProvider\UIAutomationProvider.csproj", "{A1D6A6EC-B9A2-518C-8358-298CD775D2B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAutomationTypes", "src\Editor\FPF\UIAutomationTypes\UIAutomationTypes.csproj", "{AE3666FC-31FA-5EBF-8ED5-0CEF50186B67}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationCore", "src\Editor\FPF\PresentationCore\PresentationCore.csproj", "{0E73055E-9DCB-554A-935B-60C223D82B83}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationFramework", "src\Editor\FPF\PresentationFramework\PresentationFramework.csproj", "{1C53C421-EAB4-5104-BEA1-164D09E40C54}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIAutomationClient", "src\Editor\FPF\UIAutomationClient\UIAutomationClient.csproj", "{F26AC124-3EB5-5DA2-AE13-51904AFBFB70}"
 EndProject
@@ -44,8 +34,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUtilityImpl", "src\Editor\Core\Impl\CoreUtilityImpl.csproj", "{34D4D478-647E-509E-9B2F-7E11FAE15C73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextLogicUtil", "src\Editor\Text\Util\TextLogicUtil\TextLogicUtil.csproj", "{4F556838-7D8A-542A-A886-3AF972665C3A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraceCompletionImpl", "src\Editor\Text\Impl\BraceCompletion\BraceCompletionImpl.csproj", "{E6518A68-6309-5458-8E15-B65A391CE8A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBufferUndoManagerImpl", "src\Editor\Text\Impl\TextBufferUndoManager\TextBufferUndoManagerImpl.csproj", "{D559AC50-50B5-5C97-8F18-CA5581B16266}"
 EndProject
@@ -83,19 +71,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlining", "src\Editor\Tex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMatchingImpl", "src\Editor\Text\Impl\PatternMatching\PatternMatchingImpl.csproj", "{E3E20ABF-9920-59BD-AA5B-96DC69D5382F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationCoreGtk", "src\Editor\FPF\PresentationCore\PresentationCoreGtk.csproj", "{92E649D2-BE16-4688-ACA5-61ACC5556CFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationCoreGtk", "src\Editor\FPF\PresentationCore\PresentationCore.csproj", "{92E649D2-BE16-4688-ACA5-61ACC5556CFF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FPF_Gtk", "FPF_Gtk", "{F2475C0D-E5DD-470D-8521-6796F503C021}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FPF_Shared", "FPF_Shared", "{552D852C-5C72-44F8-9BA7-AE2A6D6EE586}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsBaseGtk", "src\Editor\FPF\WindowsBase\WindowsBaseGtk.csproj", "{48C412AD-19A4-4F88-9458-96A41102C133}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsBaseGtk", "src\Editor\FPF\WindowsBase\WindowsBase.csproj", "{48C412AD-19A4-4F88-9458-96A41102C133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationFrameworkGtk", "src\Editor\FPF\PresentationFramework\PresentationFrameworkGtk.csproj", "{ED220B4F-68E7-4A71-A215-40BBEFBDA9B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationFrameworkGtk", "src\Editor\FPF\PresentationFramework\PresentationFramework.csproj", "{ED220B4F-68E7-4A71-A215-40BBEFBDA9B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUIGtk", "src\Editor\Text\Def\TextUIGtk\TextUIGtk.csproj", "{5E59E39C-6B80-4F63-9753-E872A10332AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraceCompletionImplGtk", "src\Editor\Text\Impl\BraceCompletion\BraceCompletionImplGtk.csproj", "{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraceCompletionImplGtk", "src\Editor\Text\Impl\BraceCompletion\BraceCompletionImpl.csproj", "{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,14 +149,6 @@ Global
 		{9A603430-A2C1-5599-AECB-1E1A5C229DFE}.Windows|Any CPU.Build.0 = Debug|Any CPU
 		{9A603430-A2C1-5599-AECB-1E1A5C229DFE}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{9A603430-A2C1-5599-AECB-1E1A5C229DFE}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{E75466D3-CC61-5625-99AC-278C0049BFFD}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
-		{E75466D3-CC61-5625-99AC-278C0049BFFD}.macOS|Any CPU.Build.0 = Debug|Any CPU
-		{E75466D3-CC61-5625-99AC-278C0049BFFD}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{E75466D3-CC61-5625-99AC-278C0049BFFD}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{522016EE-7098-5C37-844E-297AEDDEE1B4}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
-		{522016EE-7098-5C37-844E-297AEDDEE1B4}.macOS|Any CPU.Build.0 = Debug|Any CPU
-		{522016EE-7098-5C37-844E-297AEDDEE1B4}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{522016EE-7098-5C37-844E-297AEDDEE1B4}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{A1D6A6EC-B9A2-518C-8358-298CD775D2B5}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1D6A6EC-B9A2-518C-8358-298CD775D2B5}.macOS|Any CPU.Build.0 = Debug|Any CPU
 		{A1D6A6EC-B9A2-518C-8358-298CD775D2B5}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
@@ -177,10 +157,6 @@ Global
 		{AE3666FC-31FA-5EBF-8ED5-0CEF50186B67}.macOS|Any CPU.Build.0 = Debug|Any CPU
 		{AE3666FC-31FA-5EBF-8ED5-0CEF50186B67}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{AE3666FC-31FA-5EBF-8ED5-0CEF50186B67}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{1C53C421-EAB4-5104-BEA1-164D09E40C54}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C53C421-EAB4-5104-BEA1-164D09E40C54}.macOS|Any CPU.Build.0 = Debug|Any CPU
-		{1C53C421-EAB4-5104-BEA1-164D09E40C54}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{1C53C421-EAB4-5104-BEA1-164D09E40C54}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{F26AC124-3EB5-5DA2-AE13-51904AFBFB70}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
 		{F26AC124-3EB5-5DA2-AE13-51904AFBFB70}.macOS|Any CPU.Build.0 = Debug|Any CPU
 		{F26AC124-3EB5-5DA2-AE13-51904AFBFB70}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
@@ -209,12 +185,6 @@ Global
 		{4F556838-7D8A-542A-A886-3AF972665C3A}.Windows|Any CPU.Build.0 = Debug|Any CPU
 		{4F556838-7D8A-542A-A886-3AF972665C3A}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{4F556838-7D8A-542A-A886-3AF972665C3A}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{E6518A68-6309-5458-8E15-B65A391CE8A8}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6518A68-6309-5458-8E15-B65A391CE8A8}.macOS|Any CPU.Build.0 = Debug|Any CPU
-		{E6518A68-6309-5458-8E15-B65A391CE8A8}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6518A68-6309-5458-8E15-B65A391CE8A8}.Windows|Any CPU.Build.0 = Debug|Any CPU
-		{E6518A68-6309-5458-8E15-B65A391CE8A8}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{E6518A68-6309-5458-8E15-B65A391CE8A8}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{D559AC50-50B5-5C97-8F18-CA5581B16266}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
 		{D559AC50-50B5-5C97-8F18-CA5581B16266}.macOS|Any CPU.Build.0 = Debug|Any CPU
 		{D559AC50-50B5-5C97-8F18-CA5581B16266}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
@@ -347,15 +317,10 @@ Global
 		{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}.Windows|Any CPU.Build.0 = Debug|Any CPU
 		{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{0E73055E-9DCB-554A-935B-60C223D82B83}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{0E73055E-9DCB-554A-935B-60C223D82B83}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{5E59E39C-6B80-4F63-9753-E872A10332AE}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{5E59E39C-6B80-4F63-9753-E872A10332AE}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{522016EE-7098-5C37-844E-297AEDDEE1B4} = {01986EB1-3128-5838-B09A-7754A44C22CE}
-		{0E73055E-9DCB-554A-935B-60C223D82B83} = {01986EB1-3128-5838-B09A-7754A44C22CE}
-		{1C53C421-EAB4-5104-BEA1-164D09E40C54} = {01986EB1-3128-5838-B09A-7754A44C22CE}
 		{92E649D2-BE16-4688-ACA5-61ACC5556CFF} = {F2475C0D-E5DD-470D-8521-6796F503C021}
 		{AE3666FC-31FA-5EBF-8ED5-0CEF50186B67} = {552D852C-5C72-44F8-9BA7-AE2A6D6EE586}
 		{A1D6A6EC-B9A2-518C-8358-298CD775D2B5} = {552D852C-5C72-44F8-9BA7-AE2A6D6EE586}
