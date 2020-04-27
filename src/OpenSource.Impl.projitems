@@ -2,15 +2,15 @@
 <Project>
   <!-- Fake Presentation Foundation for Cocoa -->
   <ItemGroup Condition="$(HaveXamarinMac)">
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\WindowsBase\WindowsBase.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\WindowsBase\WindowsBaseMac.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationCore\PresentationCore.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationCore\PresentationCoreMac.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationFramework\PresentationFramework.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationFramework\PresentationFrameworkMac.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
@@ -29,15 +29,15 @@
   </ItemGroup>
 
   <ItemGroup Condition="$(HaveGtk)">
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\WindowsBase\WindowsBaseGtk.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\WindowsBase\WindowsBase.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationCore\PresentationCoreGtk.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationCore\PresentationCore.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationFramework\PresentationFrameworkGtk.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationFramework\PresentationFramework.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
@@ -152,7 +152,7 @@
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
       <Consolidate>true</Consolidate>
     </ProjectReference>
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImpl.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImplMac.csproj">
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
       <Consolidate>true</Consolidate>
     </ProjectReference>
@@ -160,7 +160,7 @@
 
   <!-- Gtk Projects -->
   <ItemGroup Condition="$(HaveGtk)">
-    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImplGtk.csproj">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImpl.csproj">
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
       <Consolidate>true</Consolidate>
     </ProjectReference>
