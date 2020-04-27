@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project>
 
   <Import Condition="$(OS) == 'OSX'" Project="Sdk.props" Sdk="Xamarin.Mac.Sdk" />
@@ -32,7 +32,7 @@
     <ProjectReference Include="..\..\Def\TextData\TextData.csproj" />
     <ProjectReference Include="..\..\Def\TextLogic\TextLogic.csproj" />
     <ProjectReference Include="..\..\Def\TextUI\TextUI.csproj" />
-    <ProjectReference Include="..\..\Def\TextUICocoa\TextUICocoa.csproj" />
+    <ProjectReference Include="..\..\Def\TextUIGtk\TextUIGtk.csproj" />
     <ProjectReference Include="..\..\Util\TextDataUtil\TextDataUtil.csproj" />
     <ProjectReference Include="..\..\Def\Internal\Internal.csproj" />
   </ItemGroup>
@@ -48,6 +48,7 @@
       <AutoGen>true</AutoGen>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <Compile Remove="BraceCompletionAdornmentServiceMac.cs" />
   </ItemGroup>
 
   <Import Condition="$(OS) == 'Windows_NT'" Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

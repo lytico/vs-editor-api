@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Microsoft.VisualStudio.Text.UI</AssemblyName>
     <RootNamespace>Microsoft.VisualStudio.Text.Editor</RootNamespace>
@@ -14,7 +14,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Core\Def\CoreUtility.csproj" />
-    <ProjectReference Include="..\..\..\FPF\PresentationCore\PresentationCoreGtk.csproj" />
+    <ProjectReference Include="..\..\..\FPF\PresentationCore\PresentationCore.csproj" />
     <ProjectReference Include="..\TextData\TextData.csproj" />
     <ProjectReference Include="..\TextLogic\TextLogic.csproj" />
   </ItemGroup>

@@ -54,13 +54,13 @@
     <ItemGroup>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'WindowsBase'"
-        Include="$(FPFRootPath)WindowsBase\WindowsBase.csproj"/>
+        Include="$(FPFRootPath)WindowsBase\WindowsBaseMac.csproj"/>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'PresentationCore'"
-        Include="$(FPFRootPath)PresentationCore\PresentationCore.csproj"/>
+        Include="$(FPFRootPath)PresentationCore\PresentationCoreMac.csproj"/>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'PresentationFramework'"
-        Include="$(FPFRootPath)PresentationFramework\PresentationFramework.csproj"/>
+        Include="$(FPFRootPath)PresentationFramework\PresentationFrameworkMac.csproj"/>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'UIAutomationClient'"
         Include="$(FPFRootPath)UIAutomationClient\UIAutomationClient.csproj"/>
@@ -95,13 +95,13 @@
     <ItemGroup>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'WindowsBase'"
-        Include="$(FPFRootPath)WindowsBase\WindowsBaseGtk.csproj"/>
+        Include="$(FPFRootPath)WindowsBase\WindowsBase.csproj"/>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'PresentationCore'"
-        Include="$(FPFRootPath)PresentationCore\PresentationCoreGtk.csproj"/>
+        Include="$(FPFRootPath)PresentationCore\PresentationCore.csproj"/>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'PresentationFramework'"
-        Include="$(FPFRootPath)PresentationFramework\PresentationFrameworkGtk.csproj"/>
+        Include="$(FPFRootPath)PresentationFramework\PresentationFramework.csproj"/>
       <ProjectReference
         Condition="'%(Reference.Identity)' == 'UIAutomationClient'"
         Include="$(FPFRootPath)UIAutomationClient\UIAutomationClient.csproj"/>
