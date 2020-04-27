@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUtility", "src\Editor\Core\Def\CoreUtility.csproj", "{079AB40D-EBFB-556E-AC42-1FE65D0E0327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imaging", "src\Editor\Imaging\Def\Imaging.csproj", "{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextData", "src\Editor\Text\Def\TextData\TextData.csproj", "{58999311-75E2-5099-856C-CAEE5CD13240}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextLogic", "src\Editor\Text\Def\TextLogic\TextLogic.csproj", "{43DA95BB-5CAE-5E28-8DE1-64CB45E4396C}"
@@ -20,8 +18,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntellisenseDef", "src\Editor\Language\Def\Intellisense\IntellisenseDef.csproj", "{6308AAB7-9DF7-5C7B-8FF5-AA25FDFA642C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internal", "src\Editor\Text\Def\Internal\Internal.csproj", "{B5F433E1-F4DB-5EBC-8CB7-E3F39E6628C4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extras", "src\Editor\Text\Def\Extras\Extras.csproj", "{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardClassification", "src\Editor\Language\Def\StandardClassification\StandardClassification.csproj", "{9A603430-A2C1-5599-AECB-1E1A5C229DFE}"
 EndProject
@@ -117,12 +113,6 @@ Global
 		{079AB40D-EBFB-556E-AC42-1FE65D0E0327}.Windows|Any CPU.Build.0 = Debug|Any CPU
 		{079AB40D-EBFB-556E-AC42-1FE65D0E0327}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{079AB40D-EBFB-556E-AC42-1FE65D0E0327}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
-		{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}.macOS|Any CPU.Build.0 = Debug|Any CPU
-		{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
-		{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}.Windows|Any CPU.Build.0 = Debug|Any CPU
-		{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{71237F94-BC7F-5AA3-A3B5-3EBB84721CE8}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{58999311-75E2-5099-856C-CAEE5CD13240}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
 		{58999311-75E2-5099-856C-CAEE5CD13240}.macOS|Any CPU.Build.0 = Debug|Any CPU
 		{58999311-75E2-5099-856C-CAEE5CD13240}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
@@ -165,12 +155,6 @@ Global
 		{B5F433E1-F4DB-5EBC-8CB7-E3F39E6628C4}.Windows|Any CPU.Build.0 = Debug|Any CPU
 		{B5F433E1-F4DB-5EBC-8CB7-E3F39E6628C4}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{B5F433E1-F4DB-5EBC-8CB7-E3F39E6628C4}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
-		{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}.macOS|Any CPU.Build.0 = Debug|Any CPU
-		{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}.Windows|Any CPU.Build.0 = Debug|Any CPU
-		{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
-		{D7E391EB-6FB6-50EA-AE0F-B5BF16DDA6BE}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{9A603430-A2C1-5599-AECB-1E1A5C229DFE}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A603430-A2C1-5599-AECB-1E1A5C229DFE}.macOS|Any CPU.Build.0 = Debug|Any CPU
 		{9A603430-A2C1-5599-AECB-1E1A5C229DFE}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
