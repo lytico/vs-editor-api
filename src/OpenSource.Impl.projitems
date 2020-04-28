@@ -2,6 +2,33 @@
 <Project>
   <!-- Fake Presentation Foundation for Cocoa -->
   <ItemGroup Condition="$(HaveXamarinMac)">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\WindowsBase\WindowsBaseMac.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationCore\PresentationCoreMac.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\PresentationFramework\PresentationFrameworkMac.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\UIAutomationTypes\UIAutomationTypes.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\UIAutomationProvider\UIAutomationProvider.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\UIAutomationClient\UIAutomationClient.csproj">
+      <SolutionFolder>FPF</SolutionFolder>
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(HaveGtk)">
     <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\FPF\WindowsBase\WindowsBase.csproj">
       <SolutionFolder>FPF</SolutionFolder>
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
@@ -125,6 +152,14 @@
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
       <Consolidate>true</Consolidate>
     </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImplMac.csproj">
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+      <Consolidate>true</Consolidate>
+    </ProjectReference>
+  </ItemGroup>
+
+  <!-- Gtk Projects -->
+  <ItemGroup Condition="$(HaveGtk)">
     <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Impl\BraceCompletion\BraceCompletionImpl.csproj">
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
       <Consolidate>true</Consolidate>

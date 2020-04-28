@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(TargetFramework)</TargetFramework>
+    <Configurations>Debug;Release;Gnome</Configurations>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PresentationCore\PresentationCoreGtk.csproj" />
+    <ProjectReference Include="..\WindowsBase\WindowsBaseGtk.csproj" />
+  </ItemGroup>
+</Project>

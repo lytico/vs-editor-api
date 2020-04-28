@@ -1,13 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-<PropertyGroup>
+﻿<Project Sdk="Xamarin.Mac.Sdk">
+  <PropertyGroup>
     <TargetFramework>$(TargetFramework)</TargetFramework>
-    <AssemblyName>PresentationFramework</AssemblyName>
-    <RootNamespace>PresentationFramework</RootNamespace>
     <Configurations>Debug;Release;Gnome</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PresentationCore\PresentationCore.csproj" />
+    <ProjectReference Include="..\UIAutomationProvider\UIAutomationProvider.csproj" />
+    <ProjectReference Include="..\UIAutomationTypes\UIAutomationTypes.csproj" />
     <ProjectReference Include="..\WindowsBase\WindowsBase.csproj" />
   </ItemGroup>
 </Project>

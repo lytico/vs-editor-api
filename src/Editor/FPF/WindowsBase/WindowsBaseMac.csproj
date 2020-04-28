@@ -1,23 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Xamarin.Mac.Sdk">
   <PropertyGroup>
     <NoWarn>1699,67,618</NoWarn>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;NET_4_0;NET_4_5;NET_4_6;MONO;WIN_PLATFORM;MULTIPLEX_OS</DefineConstants>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PublicSign>false</PublicSign>
-    <AssemblyName>WindowsBase</AssemblyName>
-    <RootNamespace>WindowsBase</RootNamespace>
+    <TargetFramework>$(TargetFramework)</TargetFramework>
     <Configurations>Debug;Release;Gnome</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xaml" />
-    <Reference Include="Xwt, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
-      <HintPath>..\..\..\..\libs\Xwt\Xwt.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="System.Windows.Threading\DispatcherOperationMac.cs" />
   </ItemGroup>
 </Project>

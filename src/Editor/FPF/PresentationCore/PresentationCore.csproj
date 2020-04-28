@@ -1,10 +1,21 @@
-﻿<Project Sdk="Xamarin.Mac.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>$(TargetFramework)</TargetFramework>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <RootNamespace>PresentationCore</RootNamespace>
+    <Configurations>Debug;Release;Gnome</Configurations>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\UIAutomationProvider\UIAutomationProvider.csproj" />
     <ProjectReference Include="..\UIAutomationTypes\UIAutomationTypes.csproj" />
     <ProjectReference Include="..\WindowsBase\WindowsBase.csproj" />
+    <Reference Include="Xwt, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
+      <HintPath>..\..\..\..\libs\Xwt\Xwt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="System.Windows.ClipboardMac.cs" />
+    <Compile Remove="System.Windows.UIElementMac.cs" />
   </ItemGroup>
 </Project>
