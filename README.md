@@ -1,3 +1,11 @@
+# WARNING! THIS BRANCH IS A STUB
+
+its indended to compile, NOT TO WORK at this time
+
+it contains Microsoft Visual Studio Editor API resolved over Mono.Xwt-Stubs
+
+# this is the original readme:
+
 # Microsoft Visual Studio Editor API
 
 This repository contains the open source layers of the Microsoft Visual
