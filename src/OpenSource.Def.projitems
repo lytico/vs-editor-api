@@ -42,5 +42,8 @@
     <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Def\TextUIGtk\TextUIGtk.csproj">
       <Private>$(ReferencesVSEditorCopyToOutput)</Private>
     </ProjectReference>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Editor\Text\Def\TextUICommon\TextUICommon.csproj">
+      <Private>$(ReferencesVSEditorCopyToOutput)</Private>
+    </ProjectReference>
   </ItemGroup>
 </Project>

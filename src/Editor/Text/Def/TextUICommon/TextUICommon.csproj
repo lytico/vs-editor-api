@@ -12,9 +12,6 @@
     <OutputPath>bin\Debug\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationFramework" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TextData\TextData.csproj" />
     <ProjectReference Include="..\TextUI\TextUI.csproj" />
     <ProjectReference Include="..\TextUIWpf\TextUIWpf.csproj" />
