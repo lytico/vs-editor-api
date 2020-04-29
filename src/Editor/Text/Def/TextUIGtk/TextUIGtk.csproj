@@ -25,7 +25,7 @@
     <ProjectReference Include="..\..\..\Core\Def\CoreUtility.csproj" />
     <ProjectReference Include="..\TextData\TextData.csproj" />
     <ProjectReference Include="..\TextLogic\TextLogic.csproj" />
-    <ProjectReference Include="..\TextUiCommon\TextUICommon.csproj" />
+    <ProjectReference Include="..\TextUICommon\TextUICommon.csproj" />
     <ProjectReference Include="..\TextUIWpf\TextUIWpf.csproj" />
     <ProjectReference Include="..\TextUI\TextUI.csproj" />
   </ItemGroup>

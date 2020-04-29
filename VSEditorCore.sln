@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUIGtk", "src\Editor\Tex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BraceCompletionImplGtk", "src\Editor\Text\Impl\BraceCompletion\BraceCompletionImpl.csproj", "{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUICommon", "src\Editor\Text\Def\TextUICommon\TextUICommon.csproj", "{F163FDDD-6716-4B60-9221-5993256C7476}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		macOS|Any CPU = macOS|Any CPU
@@ -319,6 +321,18 @@ Global
 		{033186E5-D2CB-4DA2-B34C-427BA8CFD5D8}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
 		{5E59E39C-6B80-4F63-9753-E872A10332AE}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
 		{5E59E39C-6B80-4F63-9753-E872A10332AE}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
+		{F163FDDD-6716-4B60-9221-5993256C7476}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{F163FDDD-6716-4B60-9221-5993256C7476}.macOS|Any CPU.Build.0 = Debug|Any CPU
+		{F163FDDD-6716-4B60-9221-5993256C7476}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
+		{F163FDDD-6716-4B60-9221-5993256C7476}.Windows|Any CPU.Build.0 = Debug|Any CPU
+		{F163FDDD-6716-4B60-9221-5993256C7476}.Gnome|Any CPU.ActiveCfg = Gnome|Any CPU
+		{F163FDDD-6716-4B60-9221-5993256C7476}.Gnome|Any CPU.Build.0 = Gnome|Any CPU
+		{3C40BF0D-7C84-40D7-8335-67E0B2BADD18}.macOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C40BF0D-7C84-40D7-8335-67E0B2BADD18}.macOS|Any CPU.Build.0 = Debug|Any CPU
+		{3C40BF0D-7C84-40D7-8335-67E0B2BADD18}.Windows|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C40BF0D-7C84-40D7-8335-67E0B2BADD18}.Windows|Any CPU.Build.0 = Debug|Any CPU
+		{3C40BF0D-7C84-40D7-8335-67E0B2BADD18}.Gnome|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C40BF0D-7C84-40D7-8335-67E0B2BADD18}.Gnome|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{92E649D2-BE16-4688-ACA5-61ACC5556CFF} = {F2475C0D-E5DD-470D-8521-6796F503C021}

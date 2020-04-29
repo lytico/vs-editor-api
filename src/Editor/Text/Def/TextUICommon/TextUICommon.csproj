@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0">
+<Project>
   <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.props" />
   <PropertyGroup>
     <AssemblyName>Microsoft.VisualStudio.Text.UI.Common</AssemblyName>
@@ -11,12 +11,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Gnome|AnyCPU' ">
-    <OutputPath>bin\Gnome\</OutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="PresentationFramework" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TextData\TextData.csproj" />
     <ProjectReference Include="..\TextUI\TextUI.csproj" />
