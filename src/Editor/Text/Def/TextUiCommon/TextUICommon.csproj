@@ -1,7 +1,7 @@
-<Project>
+<Project ToolsVersion="15.0">
   <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.props" />
   <PropertyGroup>
-    <AssemblyName>Microsoft.VisualStudio.Text.UI.Gtk</AssemblyName>
+    <AssemblyName>Microsoft.VisualStudio.Text.UI.Common</AssemblyName>
     <RootNamespace>$(AssemblyName)</RootNamespace>
     <PushToPublicFeed>true</PushToPublicFeed>
     <NoWarn>649;436;8073;$(NoWarn)</NoWarn>
@@ -11,23 +11,23 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Gnome|AnyCPU' ">
+    <OutputPath>bin\Gnome\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="Xwt, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
-      <HintPath>..\..\..\..\..\libs\Xwt\Xwt.dll</HintPath>
-    </Reference>
+    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\Def\CoreUtility.csproj" />
     <ProjectReference Include="..\TextData\TextData.csproj" />
-    <ProjectReference Include="..\TextLogic\TextLogic.csproj" />
-    <ProjectReference Include="..\TextUiCommon\TextUICommon.csproj" />
-    <ProjectReference Include="..\TextUIWpf\TextUIWpf.csproj" />
     <ProjectReference Include="..\TextUI\TextUI.csproj" />
+    <ProjectReference Include="..\TextUIWpf\TextUIWpf.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Composition" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DifferenceViewer" />
+    <Folder Include="DragDrop" />
   </ItemGroup>
   <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" />
 </Project>
