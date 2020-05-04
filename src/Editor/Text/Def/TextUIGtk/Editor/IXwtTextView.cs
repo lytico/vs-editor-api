@@ -14,7 +14,7 @@ namespace Microsoft.VisualStudio.Text.Editor
     public interface IXwtTextView : ITextView2
     {
         /// <summary>
-        /// Gets the <see cref="NSView"/> that renders the view.
+        /// Gets the <see cref="Widget"/> that renders the view.
         /// </summary>
         Widget VisualElement { get; }
 
